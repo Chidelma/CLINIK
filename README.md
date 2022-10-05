@@ -19,7 +19,7 @@ You may choose Ruby, Java, C# or Python to complete the solution.
 
 Your code should include a set of unit tests. You do not need to include a database, console application or GUI. The unit tests are all that is required.
 
-Code should be submitted in a Git repository with clear documentation on how to run the tests. Feel free to specify any assumptions that you’ve made, along with any missing details that would complete the solution.
+Code should be submitted in a Git repository with clear documentation on how to run the tests. Feel free to specify any assumptions that you’ve made, along with any missing details that would complete the solution. Please open a pull request within this repo once you're happy with your solution.
 
 If you require further clarification, then please do not hesitate to ask.
 
