@@ -41,3 +41,28 @@ Your job is to design and implement the core components of an on-line scheduling
 - Provide the patient with a list of available appointment times. Inputs are the appointment type and a date, either today or in the future. The 2 hour booking deadline applies for today’s appointments.
 - Allow the patient to book an appointment.
 - Provide the practitioner with a list of scheduled appointments for the current day.
+
+## Tips for Initial Project Setup
+To speed up start on your project you can use steps below to set up your project
+
+### C#
+Example set up using .netcore
+#### Manual set up
+* Create a solution with a class library project where you will implement the requirements
+* Add a test project referencing your library project using your favourite testing framework (for example nUnit, xUnit, MSTest)
+* Feel free to add more library projects and any `nuget` packages you find necessary
+* There is no need to add an API or console application
+#### Alternative console setup
+* You can run script below in `Clinic.Scheduling` directory to create `Clinic.Scheduling` solution with class library and `xUnit` test project.
+  ```
+  dotnet new sln
+  dotnet new classlib -n Clinic.Scheduling
+  dotnet new list xUnit
+  dotnet new xunit -n Clinic.Scheduling.Test
+  dotnet sln add Clinic.Scheduling/Clinic.Scheduling.csproj
+  dotnet sln add Clinic.Scheduling.Test/Clinic.Scheduling.Test.csproj
+  dotnet add Clinic.Scheduling.Test/Clinic.Scheduling.Test.csproj reference Clinic.Scheduling/Clinic.Scheduling.csproj
+  ```
+* You can verify the tests run with `dotnet test`
+* Feel free to add more library projects and any `nuget` packages you find necessary
+* There is no need to add API or console application
