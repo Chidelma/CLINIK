@@ -46,12 +46,14 @@ Your job is to design and implement the core components of an on-line scheduling
 To speed up start on your project you can use steps below to set up your project
 
 ### C#
-Example set up using .netcore
+Example set up using .NET (core). Whether you decide to set up the app manually or using the console:
+* Feel free to add more library projects and any `nuget` packages you find necessary.
+* You do NOT need to add WEB API or console application projects.
+
 #### Manual set up
-* Create a solution with a class library project where you will implement the requirements
-* Add a test project referencing your library project using your favourite testing framework (for example nUnit, xUnit, MSTest)
-* Feel free to add more library projects and any `nuget` packages you find necessary
-* There is no need to add an API or console application
+* Create a solution with a class library project where you will implement the requirements.
+* Add a test project referencing your library project using your favourite testing framework (for example nUnit, xUnit, MSTest).
+
 #### Alternative console setup
 * You can run script below in `Clinic.Scheduling` directory to create `Clinic.Scheduling` solution with class library and `xUnit` test project.
   ```
@@ -64,5 +66,4 @@ Example set up using .netcore
   dotnet add Clinic.Scheduling.Test/Clinic.Scheduling.Test.csproj reference Clinic.Scheduling/Clinic.Scheduling.csproj
   ```
 * You can verify the tests run with `dotnet test`
-* Feel free to add more library projects and any `nuget` packages you find necessary
-* There is no need to add API or console application
+* Note: you can swap `xUnit` for `nUnit` in script above if you prefer to use `nUnit`
