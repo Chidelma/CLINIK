@@ -49,6 +49,7 @@ To speed up start on your project you can use steps below to set up your project
 Example set up using .NET (core). Whether you decide to set up the app manually or using the console:
 * Feel free to add more library projects and any `nuget` packages you find necessary.
 * You do NOT need to add WEB API or console application projects.
+* Please commit your scaffolding before you start implementing your exercise 
 
 #### Manual set up
 * Create a solution with a class library project where you will implement the requirements.
