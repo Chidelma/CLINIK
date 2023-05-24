@@ -31,7 +31,7 @@ Your job is to design and implement the core components of an on-line scheduling
 
 - The clinic is open from 9am until 5pm.
 - The clinic offers three types of appointments, a 90 minutes initial consultation, standard 60 minute appointments and 30 minute check-ins.
-- The clinic can only have one appointment at a time.
+- Appointments do not overlap. There can only be one booked appointment at any time.
 - Appointments start on the hour or half-hour.
 - Bookings can only be made for appointments that start and end within the clinic hours.
 - Bookings cannot be made within 2 hours of the appointment start time.
