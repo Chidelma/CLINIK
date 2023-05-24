@@ -2,7 +2,7 @@
 
 Hey there 👋 we're excited that you're considering joining our mission to help the helpers!
 
-The goal of this exercise is to evaluate your coding style, OO design skills, code efficiency, use of data structures, and functional completeness.
+The goal of this exercise is to evaluate your coding style, code design skills, code efficiency, use of data structures and clarity of your tests.
 
 We are looking for:
 
@@ -15,7 +15,7 @@ We are looking for:
   - Documentation / README.
   - Code changes in commits and commit messages.
 
-You may choose Ruby, Java, C# or Python to complete the solution.
+You may choose Ruby, Java, C#, Go or Python to complete the solution.
 
 Your code should include a set of unit tests. You do not need to include a database, console application or GUI. The unit tests are all that is required.
 
@@ -30,10 +30,8 @@ If you require further clarification, then please do not hesitate to ask.
 Your job is to design and implement the core components of an on-line scheduling application for a physiotherapy clinic. The clinic has the following business rules:
 
 - The clinic is open from 9am until 5pm.
-- The clinic currently has 3 practitioners on staff.
 - The clinic offers three types of appointments, a 90 minutes initial consultation, standard 60 minute appointments and 30 minute check-ins.
-- Patients book with a specific practitioner.
-- Practitioners can only see a single patient at any time.
+- The clinic can only have one appointment at a time
 - Appointments start on the hour or half-hour.
 - Bookings can only be made for appointments that start and end within the clinic hours.
 - Bookings cannot be made within 2 hours of the appointment start time.
