@@ -68,3 +68,30 @@ Example set up using .NET (core). Whether you decide to set up the app manually 
   ```
 * You can verify the tests run with `dotnet test`
 * Note: you can swap `xUnit` for `nUnit` in script above if you prefer to use `nUnit`
+
+### Python
+Example set up using Python (3.11). Feel free to set up the Python project however you like,
+however, make sure that it is reproducible on our end. Update your `constraints.txt` or use Docker
+to make sure we don't pull down different versions of the libraries.
+
+You are free to add additional libraries, or change how the source code is stored, this is just a minimal set up.
+
+```
+virtualenv -p python3.11 clinic_scheduling
+cd clinic_scheduling
+source bin/activate
+mkdir tests
+```
+
+At this point you can create folders for packages at the project top-level and then write tests for them under the
+tests directory using the built-in `unittest` package.
+
+You can run these tests using `python -m unittest tests/**/*.py`.
+
+If you would like to use other libraries like `pytest`, feel free to do so, just remember to include a constraints
+file alongside your requirements file:
+
+```
+pip install pytest
+pip freeze > constraints.txt
+```
