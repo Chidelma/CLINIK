@@ -19,7 +19,7 @@ You may choose Ruby, Java, C#, Go or Python to complete the solution.
 
 Your code should include a set of unit tests. You do not need to include a database, console application or GUI. The unit tests are all that is required.
 
-Code should be submitted in a Git repository with clear documentation on how to run the tests. Feel free to specify any assumptions that you’ve made, along with any missing details that would complete the solution. 
+Code should be submitted in a Git repository with clear documentation on how to run the tests. Feel free to specify any assumptions that you’ve made, along with any missing details that would complete the solution.
 
 Please open a pull request within this repo once you're happy with your solution.
 
@@ -45,11 +45,33 @@ Your job is to design and implement the core components of an on-line scheduling
 ## Tips for Initial Project Setup
 To speed up start on your project you can use steps below to set up your project
 
+### Ruby
+
+* Ensure you have a recent version of Ruby and Bundler installed (`ruby -v` and `bundle -v` from command line to verify).
+* Specify any gem dependencies you will use in a `Gemfile` in your project's root (https://bundler.io/)
+* Use a testing framework of your choice. RSpec and Minitest are common choices:
+  * https://rspec.info/
+  * https://github.com/minitest/minitest
+* Add your application code in an `./app/` directory inside your project root.
+* Add your tests in whatever directory is appropriate for your testing tool of choice (`./tests/` or `./spec/` for example)
+* Provide instructions as to how to run your tests
+* No UI, frameworks, or datastores are required - only your application code and tests that exercise it.
+
+### Java
+
+* Ensure you have a recent version of the Java SDK installed on your system (`java -version` and `javac -version` from command line to verify)
+* Use a testing framework of your choice, such as JUnit.
+* Use a dependency management / build system such as Apache Maven or Gradle to declare any dependencies for your submission.
+* Add your source code and tests wherever is appropriate for your build tool of choice (for example `./src/main/java` and `./src/test/java` plus appropriate directories for your package structure if using Apache Maven).
+* Feel free to add any extra dependencies you feel are necessary.
+* No UI, frameworks, or datastores are required - only your application code and tests that exercise it.
+* Provide clear instructions on retrieving dependencies, compiling your code and executing your tests. For example, if using Apache Maven: 'To compile the code for this submission and execute the tests, please run `mvn clean test` from the directory containing the `pom.xml` file'.
+
 ### C#
 Example set up using .NET (core). Whether you decide to set up the app manually or using the console:
 * Feel free to add more library projects and any `nuget` packages you find necessary.
 * You do NOT need to add WEB API or console application projects.
-* Please commit your scaffolding before you start implementing your exercise 
+* Please commit your scaffolding before you start implementing your exercise
 
 #### Manual set up
 * Create a solution with a class library project where you will implement the requirements.
