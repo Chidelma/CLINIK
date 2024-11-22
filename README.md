@@ -108,19 +108,3 @@ At this point you can create folders for packages at the project top-level and t
 tests directory using the built-in `unittest` package.
 
 You can run these tests using `python -m unittest tests/**/*.py`.
-
-### Go
-Example setup using Go. You may setup the project anyway you like. These are a few commands you can use to get setup with a basic Go package for your assignment. The following assumes you have Go installed.
-
-Unix based systems or Windows Powershell
-```
-mkdir -p ~/jane-assignment/cmd
-cd ~/jane-assignment
-go mod init jane-assignment
-```
-
-You can now create your main file and any additional folders for your assignment. You may add additional Go packages to 
-your project, if you find them useful in completing your assignment. Additional packages are optional and not a 
-requirement. 
-
-* Makes use of `go fmt` to reformat your Go code. 
