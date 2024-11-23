@@ -15,7 +15,7 @@ We are looking for:
   - Documentation / README.
   - Code changes in commits and commit messages.
 
-You may choose Ruby, Java, C#, or Python to complete the solution.
+You may choose Ruby, Java, C# or Python to complete the solution.
 
 Your code should include a set of unit tests. You do not need to include a database, console application or GUI. The unit tests are all that is required.
 
