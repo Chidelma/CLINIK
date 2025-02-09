@@ -1,10 +1,10 @@
-declare enum AppointmentType {
+export enum AppointmentType {
     InitialConsultation = 'Initial Consultation',
     Standard = 'Standard',
     CheckIn = 'Check-In'
 }
 
-declare interface Appointment {
+export interface Appointment {
     id: string,
     type: AppointmentType,
     startTime: Date,
