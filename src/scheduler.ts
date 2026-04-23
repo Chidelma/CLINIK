@@ -18,8 +18,16 @@ export class Scheduler {
      * @returns {boolean} True if the time is within clinic hours, false otherwise.
      */
 
+    private static getMinutesSinceMidnight(time: Date): number {
+        return (time.getHours() * 60) + time.getMinutes()
+    }
+
     static isWithinClincHours(time: Date, openingTime: Date, closingTime: Date): boolean {
-        return time >= openingTime && time < closingTime
+        const currentMinutes = Scheduler.getMinutesSinceMidnight(time)
+        const openingMinutes = Scheduler.getMinutesSinceMidnight(openingTime)
+        const closingMinutes = Scheduler.getMinutesSinceMidnight(closingTime)
+
+        return currentMinutes >= openingMinutes && currentMinutes < closingMinutes
     }
 
     /**

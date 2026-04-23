@@ -1,16 +1,29 @@
-# Clinic Scheduling Appointment
+# CLINIK Scheduling Assessment
 
-Thi is a clinic scheduling application that allows patients to book appointments and practitioners to view scheduled appointments
+Clinic scheduling logic for booking appointments, checking availability, and returning valid appointment slots for different consultation types.
+
+## Goal
+
+This repo focuses on the scheduling domain rather than a full web application. The core behavior lives in a scheduler service with tests that exercise booking constraints and appointment durations.
+
+## Requirements
+
+- [Bun](https://bun.sh/)
 
 ## Setup
-1. Install Bun `curl -fsSL https://bun.sh/install | bash`
 
-## Run tests
-1. Clone Repositiory
-2. Install dependencies: `bun install`
-3. Run tests: `bun test`
+```bash
+bun install
+```
+
+## Validation
+
+```bash
+bun test
+```
 
 ## Code Structure
-- `src/scheduler.ts`: Contains the `Scheduler` class
-- `tests/schedular.ts`: Conatains unit tests for the `Scheduler` class
-- `types/Appointment.ts`: Contains `Appointment` interface/enum for `Scheduler` class
+
+- `src/scheduler.ts`: scheduler implementation and booking rules.
+- `tests/`: unit tests for scheduling behavior.
+- `types/Appointment.ts`: appointment contracts and enums.

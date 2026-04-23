@@ -16,6 +16,16 @@ describe('Scheduler', () => {
     // Instanitate scheduler instance for each test
     beforeEach(() => scheduler = new Scheduler(openingTime, closingTime))
 
+    const nextClinicDayAt = (hour: number, minute = 0) => {
+
+        const date = new Date()
+
+        date.setDate(date.getDate() + 1)
+        date.setHours(hour, minute, 0, 0)
+
+        return date
+    }
+
     test("Time within Clinic Hours", () => {
 
         const time = new Date()
@@ -58,9 +68,7 @@ describe('Scheduler', () => {
 
     test('Available Appointments Slots', () => {
 
-        const date = new Date()
-
-        date.setHours(10, 0, 0, 0)
+        const date = nextClinicDayAt(10)
 
         const availableSlots = scheduler.getAvailableAppointments(AppointmentType.Standard, date)
 
@@ -69,9 +77,7 @@ describe('Scheduler', () => {
 
     test('Appointment Booking', () => {
 
-        const date = new Date()
-
-        date.setHours(10, 0, 0, 0)
+        const date = nextClinicDayAt(10)
 
         const appointment = scheduler.bookAppointments(AppointmentType.Standard, date, 'Samuel')
 
@@ -81,9 +87,7 @@ describe('Scheduler', () => {
 
     test('Overlapping Appointments', () => {
 
-        const date = new Date()
-
-        date.setHours(10, 0, 0, 0)
+        const date = nextClinicDayAt(10)
 
         scheduler.bookAppointments(AppointmentType.Standard, date, 'Samuel')
 
@@ -94,9 +98,7 @@ describe('Scheduler', () => {
 
     test('Scheduled Appointments for the day', () => {
 
-        const date = new Date()
-
-        date.setHours(10, 0, 0, 0)
+        const date = nextClinicDayAt(10)
 
         scheduler.bookAppointments(AppointmentType.Standard, date, 'Samuel')
 
